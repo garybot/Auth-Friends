@@ -1,38 +1,62 @@
 .App {
   text-align: center;
+  background-color: rgb(0, 99, 99);
+  color: ivory;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  padding-top: 20px;
+}
+nav a {
+  background-color: goldenrod;
+  color: black;
+  padding: 10px 16px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.friends-list {
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.friend-card {
+  width: 50%;
+  padding: 35px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.friend-card h3 {
+  margin: 0;
+}
+.friend-card a {
+  color: ivory;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.friend-card:nth-child(even) {
+  background-color: slategray;
+}
+
+.friend-card:nth-child(odd) {
+  background-color: darkcyan;
+}
+
+.login-form, .add-friend-form {
+  margin: 50px auto;
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.login-form input, .add-friend-form input {
+  margin: 5px auto;
+  width: 100%;
+}
+.login-form button, .add-friend-form button {
+  width: 100%;
 }
