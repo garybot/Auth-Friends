@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  background-color: rgb(0, 99, 99);
+  color: ivory;
+  height: 100vh;
+}
+
+nav {
+  padding-top: 20px;
+}
+nav a {
+  background-color: goldenrod;
+  color: black;
+  padding: 10px 16px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 50px;
+}
+
+.friends-list {
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.friend-card {
+  width: 50%;
+  padding: 35px 0;
+}
+
+.friend-card h3 {
+  margin: 0;
+}
+.friend-card a {
+  color: ivory;
+}
+
+.friend-card:nth-child(even) {
+  background-color: slategray;
+}
+
+.friend-card:nth-child(odd) {
+  background-color: darkcyan;
+}
+
+.login-form, .add-friend-form {
+  margin: 50px auto;
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.login-form input, .add-friend-form input {
+  margin: 5px auto;
+  width: 100%;
+}
+.login-form button, .add-friend-form button {
+  width: 100%;
+}
